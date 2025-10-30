@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Automatizaciones con n8n: ahorra tiempo y elimina tareas repetitivas. Flujo listo o implementación completa por expertos." />
+  <title>Automatizaciones con n8n — Iasmar Technology</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    .gradient-hero {
+      background: linear-gradient(120deg, #4f46e5 0%, #8b5cf6 100%);
+    }
+  </style>
+</head>
+<body class="antialiased text-gray-800 bg-gray-50">
+
+  <!-- NAV -->
+  <header class="bg-white shadow-sm">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-md bg-indigo-600 flex items-center justify-center text-white font-bold">N8</div>
+        <div>
+          <a href="#" class="text-lg font-semibold">Automatizaciones con n8n</a>
+          <div class="text-xs text-gray-500">Soluciones eficientes para negocios</div>
+        </div>
+      </div>
+
+      <nav class="hidden md:flex gap-6 items-center text-sm">
+        <a href="#que-es" class="hover:text-indigo-600">Qué es</a>
+        <a href="#por-que-n8n" class="hover:text-indigo-600">Por qué n8n</a>
+        <a href="#servicios" class="hover:text-indigo-600">Servicios</a>
+        <a href="n8n.html" class="hover:text-indigo-600">Cómo funciona n8n</a>
+        <a href="#contacto" class="bg-indigo-600 text-white px-4 py-2 rounded-lg shadow-sm hover:bg-indigo-700">Contactar</a>
+      </nav>
+
+      <!-- Mobile menu button -->
+      <div class="md:hidden">
+        <button id="btnMenu" aria-label="Abrir menú" class="p-2 rounded-md hover:bg-gray-100">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-gray-700">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="hidden md:hidden px-6 pb-6">
+      <a href="#que-es" class="block py-2 border-b">Qué es</a>
+      <a href="#por-que-n8n" class="block py-2 border-b">Por qué n8n</a>
+      <a href="#servicios" class="block py-2 border-b">Servicios</a>
+      <a href="#contacto" class="block py-2">Contactar</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="gradient-hero text-white py-20">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 items-center gap-8">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">Automatiza tus procesos con n8n y gana tiempo cada día</h1>
+        <p class="text-lg opacity-90 mb-6">Diseño e implementación de flujos que conectan tus aplicaciones, eliminan tareas repetitivas y reducen errores. Soluciones tailor-made pensadas para empresas y autónomos.</p>
+
+        <div class="flex gap-3">
+          <a href="#servicios" class="bg-white text-indigo-600 font-semibold px-5 py-3 rounded-lg shadow hover:opacity-95">Ver servicios</a>
+          <a href="#contacto" class="border border-white px-5 py-3 rounded-lg hover:bg-white/10">Contactar</a>
+        </div>
+      </div>
+
+      <div class="bg-white/5 rounded-xl p-6">
+        <ul class="space-y-4 text-sm">
+          <li class="flex items-start gap-3">
+            <div class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center font-semibold">1</div>
+            <div><strong>Resultados prácticos:</strong> automatizaciones listas para reducir tareas manuales en minutos.</div>
+          </li>
+          <li class="flex items-start gap-3">
+            <div class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center font-semibold">2</div>
+            <div><strong>Flexible y escalable:</strong> n8n permite integrar cientos de servicios y adaptarse al crecimiento.</div>
+          </li>
+          <li class="flex items-start gap-3">
+            <div class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center font-semibold">3</div>
+            <div><strong>Soporte profesional:</strong> diseñamos flujos claros, documentados y mantenibles.</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Qué es -->
+  <section id="que-es" class="py-16">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-4">¿Qué son las automatizaciones?</h2>
+      <p class="text-lg text-gray-700 leading-relaxed">
+        Las automatizaciones son flujos de trabajo digitales que conectan tus herramientas (CRM, correo, sheets, tiendas, chat, etc.) y ejecutan tareas repetitivas de forma automática.
+        El objetivo es ahorrar tiempo, eliminar errores humanos y permitir que tu equipo se enfoque en tareas de alto valor.
+      </p>
+    </div>
+  </section>
+
+  <!-- Por qué n8n -->
+  <section id="por-que-n8n" class="py-14 bg-white">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h3 class="text-2xl font-bold mb-3">¿Por qué trabajamos con n8n?</h3>
+        <p class="text-gray-700 mb-4 leading-relaxed">
+          n8n es una plataforma de automatización open-source con una gran flexibilidad para construir integraciones complejas sin depender de soluciones cerradas.
+          Permite crear nodos personalizados, ejecutar lógica avanzada y desplegar procesos en tu propio entorno, lo que lo hace ideal tanto para pymes como para equipos técnicos.
+        </p>
+
+        <ul class="text-gray-700 space-y-2">
+          <li>• Integraciones con cientos de servicios y APIs.</li>
+          <li>• Control total sobre tus datos (autohospedado si lo deseas).</li>
+          <li>• Flujos visuales fáciles de entender y documentar.</li>
+          <li>• Escalable: desde tareas simples hasta procesos empresariales complejos.</li>
+        </ul>
+      </div>
+
+      <div class="bg-gray-50 rounded-xl p-6 shadow">
+        <h4 class="font-semibold mb-3">Casos típicos de uso</h4>
+        <ol class="text-gray-700 list-decimal list-inside space-y-2">
+          <li>Sincro de leads del formulario a CRM y envío automático de correo.</li>
+          <li>Notificaciones a Slack cuando hay nuevas ventas o incidencias.</li>
+          <li>Procesamiento y subida automática de facturas a un drive / ERP.</li>
+          <li>Enriquecimiento de datos (consultas a APIs) para mejorar tu base de clientes.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="py-16">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6">Cómo vendemos las automatizaciones</h2>
+      <p class="text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
+        Ofrecemos dos modalidades claras: si ya tienes n8n o prefieres mantener el control, te entregamos el flujo listo. Si prefieres delegarlo, nos encargamos de implementarlo y dejarlo funcionando.
+      </p>
+
+      <div class="mt-8 grid md:grid-cols-2 gap-8">
+        <article class="bg-white rounded-2xl shadow p-6 text-left">
+          <h3 class="text-xl font-semibold">1) Entrega del flujo (lo pones tú)</h3>
+          <p class="text-gray-700 mt-4">
+            Te entregamos el flujo en formato exportable de n8n, junto con la documentación paso a paso para importarlo, configurar credenciales y probarlo.
+          </p>
+        </article>
+
+        <article class="bg-white rounded-2xl shadow p-6 text-left">
+          <h3 class="text-xl font-semibold">2) Implementación completa por nosotros</h3>
+          <p class="text-gray-700 mt-4">
+            Nos encargamos del diseño, la configuración en tu instancia (o en la nuestra si lo acuerdas), pruebas, puesta en marcha y soporte inicial.
+          </p>
+        </article>
+      </div>
+
+      <p class="text-gray-600 text-sm mt-6 max-w-2xl mx-auto">
+        Nota: ambas modalidades incluyen documentación y pruebas. Para conocer tarifas y opciones, por favor <strong>contacta con nosotros</strong>.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-16">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-4">Hablemos de tu proyecto</h2>
+      <p class="text-gray-700 mb-6">Para precios, tiempos o dudas, <strong>contáctanos</strong>. Responderemos con una propuesta personalizada sin compromiso.</p>
+
+      <div class="flex flex-col md:flex-row items-center justify-center gap-4">
+        <a href="mailto:iasmartechnology@gmail.com" class="px-6 py-3 rounded-lg bg-indigo-600 text-white font-semibold shadow hover:bg-indigo-700">Enviar email</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-200">
+    <div class="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-md bg-indigo-600 flex items-center justify-center text-white font-bold">N8</div>
+        <div>
+          <div class="font-semibold">Automatizaciones con n8n</div>
+          <div class="text-xs text-gray-400">Iasmar Technology</div>
+        </div>
+      </div>
+      <div class="text-sm text-gray-400">
+        <div>¿Preguntas? <a href="mailto:iasmartechnology@gmail.com" class="text-white hover:underline">iasmartechnology@gmail.com</a></div>
+        <div class="mt-2">© <span id="year"></span> Iasmar Technology. Todos los derechos reservados.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('btnMenu').addEventListener('click', function () {
+      const m = document.getElementById('mobileMenu');
+      m.classList.toggle('hidden');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

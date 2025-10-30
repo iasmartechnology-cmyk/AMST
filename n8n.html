@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Aprende a usar n8n: instala, crea flujos y automatiza tus procesos fácilmente con Iasmar Technology." />
+  <title>Cómo funciona n8n — Iasmar Technology</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://n8n.io/favicon.ico" />
+
+  <!-- SEO -->
+  <meta name="author" content="Iasmar Technology">
+  <meta name="keywords" content="n8n, automatización, flujos, no-code, integraciones, Iasmar Technology, workflows, productividad">
+  <meta property="og:title" content="Cómo funciona n8n — Iasmar Technology">
+  <meta property="og:description" content="Aprende a usar n8n paso a paso y crea tus propias automatizaciones sin depender de terceros.">
+  <meta property="og:image" content="https://n8n.io/_next/image?url=%2Fimages%2Feditor.png&w=1200&q=80">
+  <meta property="og:type" content="website">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body class="antialiased text-gray-800 bg-gray-50">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-md bg-indigo-600 flex items-center justify-center text-white font-bold">N8</div>
+        <div>
+          <a href="index.html" class="text-lg font-semibold hover:text-indigo-600 transition-colors">Automatizaciones con n8n</a>
+          <div class="text-xs text-gray-500">Iasmar Technology</div>
+        </div>
+      </div>
+      <nav class="hidden md:flex gap-6 items-center text-sm">
+        <a href="index.html" class="hover:text-indigo-600 transition-colors">Inicio</a>
+        <a href="index.html#servicios" class="hover:text-indigo-600 transition-colors">Servicios</a>
+        <a href="como-funciona.html" class="text-indigo-600 font-semibold">Cómo funciona</a>
+        <a href="index.html#contacto" class="bg-indigo-600 text-white px-4 py-2 rounded-lg shadow-sm hover:bg-indigo-700 transition-all">Contactar</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-indigo-600 text-white py-20 text-center fade-in">
+    <div class="max-w-4xl mx-auto px-6">
+      <h1 class="text-4xl font-bold mb-4">¿Quieres usar tú mismo n8n?</h1>
+      <p class="text-lg opacity-90 mb-6">Aprende paso a paso a crear tus propias automatizaciones sin depender de nadie, con la potencia de n8n.</p>
+      <a href="#empezar" class="inline-block bg-white text-indigo-600 px-6 py-3 rounded-lg font-medium shadow hover:bg-gray-100 transition-all">Comenzar ahora</a>
+    </div>
+  </section>
+
+  <!-- Qué es n8n -->
+  <section id="empezar" class="py-16 bg-white fade-in">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl font-bold mb-4 text-indigo-700">1. ¿Qué es n8n?</h2>
+      <p class="text-gray-700 mb-6 leading-relaxed">
+        <strong>n8n</strong> es una herramienta de automatización <em>open source</em> que te permite conectar aplicaciones y servicios fácilmente.  
+        Funciona con <strong>nodos visuales</strong> que representan acciones o integraciones, permitiéndote diseñar flujos de trabajo sin necesidad de programar desde cero.
+      </p>
+      <div class="rounded-lg overflow-hidden shadow-lg">
+       
+      </div>
+    </div>
+  </section>
+
+  <!-- Cómo empezar -->
+  <section class="py-16 bg-gray-50 fade-in">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl font-bold mb-4 text-indigo-700">2. Cómo empezar</h2>
+      <ul class="list-disc list-inside space-y-4 text-gray-700 leading-relaxed">
+        <li><strong>Instalación:</strong> usa <a href="https://n8n.cloud" target="_blank" class="text-indigo-600 hover:underline">n8n.cloud</a> o instálalo localmente con Docker o Node.js.</li>
+        <li><strong>Interfaz visual:</strong> crea tus automatizaciones arrastrando y conectando nodos de manera intuitiva.</li>
+        <li><strong>Credenciales seguras:</strong> configura las claves de tus apps como Google Sheets, Slack o Airtable desde la propia interfaz.</li>
+        <li><strong>Ejemplo básico:</strong> “Cuando llega un nuevo lead → añadirlo al CRM → enviar correo de bienvenida”.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Ventajas -->
+  <section class="py-16 fade-in">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h2 class="text-2xl font-bold mb-10 text-indigo-700">3. Ventajas de usarlo por tu cuenta</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-xl p-6 shadow hover:shadow-md transition-shadow">
+          <h3 class="font-semibold mb-2 text-indigo-600">Ahorro</h3>
+          <p class="text-gray-700 text-sm leading-relaxed">Reduce costes al no depender de terceros ni pagar licencias adicionales.</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow hover:shadow-md transition-shadow">
+          <h3 class="font-semibold mb-2 text-indigo-600">Aprendizaje</h3>
+          <p class="text-gray-700 text-sm leading-relaxed">Desarrolla tus habilidades técnicas y comprende mejor tus propios procesos.</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow hover:shadow-md transition-shadow">
+          <h3 class="font-semibold mb-2 text-indigo-600">Control</h3>
+          <p class="text-gray-700 text-sm leading-relaxed">Mantén tus datos, flujos y resultados totalmente bajo tu gestión.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 bg-indigo-50 text-center fade-in">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-2xl font-bold mb-4 text-indigo-700">¿Prefieres que lo hagamos por ti?</h2>
+      <p class="text-gray-700 mb-8 leading-relaxed">Si prefieres delegar y obtener tus automatizaciones listas y probadas, contáctanos y te enviaremos una propuesta adaptada a tu negocio.</p>
+      <a href="index.html#contacto" class="bg-indigo-600 text-white px-6 py-3 rounded-lg shadow hover:bg-indigo-700 transition-all">Contactar con nosotros</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 fade-in">
+    <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-md bg-indigo-600 flex items-center justify-center text-white font-bold">N8</div>
+        <div>
+          <div class="font-semibold">Automatizaciones con n8n</div>
+          <div class="text-xs text-gray-400">Iasmar Technology</div>
+        </div>
+      </div>
+      <div class="text-sm text-gray-400 text-center md:text-right">
+        <div>¿Preguntas? <a href="mailto:iasmartechnology@gmail.com" class="text-white hover:underline">iasmartechnology@gmail.com</a></div>
+        <div class="mt-2">© <span id="year"></span> Iasmar Technology. Todos los derechos reservados.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
