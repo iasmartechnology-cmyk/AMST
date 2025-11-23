@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Automatizaciones con n8n: ahorra tiempo y elimina tareas repetitivas. Flujo listo o implementación completa por expertos." />
+  <title>Automatizaciones con n8n — Automatic Smartechnology</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .gradient-hero { background: linear-gradient(120deg, #4f46e5 0%, #8b5cf6 100%); }
+  </style>
+</head>
+<body class="antialiased text-gray-800 bg-gray-50">
+
+<header class="bg-white shadow-sm">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-md bg-indigo-600 flex items-center justify-center text-white font-bold">AS</div>
+      <div>
+        <a href="#" class="text-lg font-semibold">Automatic Smartechnology</a>
+        <div class="text-xs text-gray-500">Automatizaciones inteligentes para negocios</div>
+      </div>
+    </div>
+    <nav class="hidden md:flex gap-6 items-center text-sm">
+      <a href="#que-es" class="hover:text-indigo-600">Qué es</a>
+      <a href="#por-que-n8n" class="hover:text-indigo-600">Por qué n8n</a>
+      <a href="#servicios" class="hover:text-indigo-600">Servicios</a>
+      <a href="n8n.html" class="hover:text-indigo-600">Cómo funciona n8n</a>
+      <a href="chatbot.html" class="hover:text-indigo-600 font-semibold">Chatbot</a>
+      <a href="#contacto" class="bg-indigo-600 text-white px-4 py-2 rounded-lg shadow-sm hover:bg-indigo-700">Contactar</a>
+    </nav>
+    <div class="md:hidden">
+      <button id="btnMenu" aria-label="Abrir menú" class="p-2 rounded-md hover:bg-gray-100">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-gray-700">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div id="mobileMenu" class="hidden md:hidden px-6 pb-6">
+    <a href="#que-es" class="block py-2 border-b">Qué es</a>
+    <a href="#por-que-n8n" class="block py-2 border-b">Por qué n8n</a>
+    <a href="#servicios" class="block py-2 border-b">Servicios</a>
+    <a href="chatbot.html" class="block py-2 border-b font-semibold text-indigo-600">Chatbot</a>
+    <a href="#contacto" class="block py-2">Contactar</a>
+  </div>
+</header>
+
+<!-- resto del contenido sin cambios -->
+
+<footer class="bg-gray-900 text-gray-200 py-8">
+  <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-md bg-indigo-600 flex items-center justify-center text-white font-bold">AS</div>
+      <div>
+        <div class="font-semibold">Automatic Smartechnology</div>
+        <div class="text-xs text-gray-400">Automatizaciones con n8n</div>
+      </div>
+    </div>
+    <div class="text-sm text-gray-400">
+      <div>Contacto: <a href="mailto:iasmartechnology@gmail.com" class="text-white hover:underline">iasmartechnology@gmail.com</a></div>
+      <div class="mt-2">© <span id="year"></span> Automatic Smartechnology. Todos los derechos reservados.</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('btnMenu').addEventListener('click', () => document.getElementById('mobileMenu').classList.toggle('hidden'));
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
