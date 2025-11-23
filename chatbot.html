@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chat Asistente — Automatic Smartechnology</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    .gradient-hero { background: linear-gradient(120deg, #4f46e5 0%, #8b5cf6 100%); }
+    #chatWindow {
+      transition: all 0.35s ease;
+      transform: translateY(20px);
+      opacity: 0;
+      pointer-events: none;
+    }
+    #chatWindow.open {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-md bg-indigo-600 flex items-center justify-center text-white font-bold">AS</div>
+      <div>
+        <a href="index.html" class="text-lg font-semibold hover:text-indigo-600 transition-colors">Automatic Smartechnology</a>
+        <div class="text-xs text-gray-500">Automatizaciones Inteligentes</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="gradient-hero text-white py-20 text-center">
+  <div class="max-w-4xl mx-auto px-6">
+    <h1 class="text-4xl font-bold mb-4">Asistente Virtual</h1>
+    <p class="text-lg opacity-90">Habla con nuestro asistente y descubre cómo podemos automatizar tu negocio para ahorrar tiempo y dinero.</p>
+  </div>
+</section>
+
+<!-- Botón flotante -->
+<button id="chatButton" class="fixed bottom-6 right-6 bg-indigo-600 hover:bg-indigo-700 text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center text-2xl transition-all">
+  💬
+</button>
+
+<!-- Ventana emergente del chat -->
+<div id="chatWindow" class="fixed bottom-24 right-6 w-[350px] h-[500px] bg-white rounded-xl shadow-2xl border overflow-hidden flex flex-col">
+
+  <div class="bg-indigo-600 text-white px-4 py-3 text-sm font-semibold flex justify-between items-center">
+    <span>Asistente Automático</span>
+    <button id="closeChat" class="text-white opacity-80 hover:opacity-100">✕</button>
+  </div>
+
+  <div class="p-3 text-sm text-gray-600 border-b">
+    Puedes preguntar sobre automatizaciones, cómo funciona n8n, o pedir que analicemos tu negocio.
+  </div>
+
+  <!-- CHAT reemplazado con la nueva URL -->
+  <iframe 
+    src="http://localhost:5678/webhook/68688e91-8337-4fe6-8056-f7cc2d561a7c/chat" 
+    class="w-full h-full border-0"></iframe>
+
+</div>
+
+<footer class="bg-gray-900 text-gray-300 mt-16">
+  <div class="max-w-6xl mx-auto px-6 py-10 text-center md:text-left">
+    <div class="text-sm text-gray-400">
+      © <span id="year"></span> Automatic Smartechnology. Todos los derechos reservados.
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const chatButton = document.getElementById('chatButton');
+  const chatWindow = document.getElementById('chatWindow');
+  const closeChat = document.getElementById('closeChat');
+
+  chatButton.addEventListener('click', () => {
+    chatWindow.classList.add('open');
+  });
+
+  closeChat.addEventListener('click', () => {
+    chatWindow.classList.remove('open');
+  });
+</script>
+
+</body>
+</html>
+
